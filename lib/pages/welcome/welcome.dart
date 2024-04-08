@@ -22,7 +22,7 @@ class Welcome extends StatelessWidget {
             //second Onboarding page
             appOnboardingPage(imagePath: "assets/animations/animation3.json", title: "Khám phá các chủ đề đa dạng", title2: "Tìm kiếm các khóa học phù hợp với sở thích của bạn" ),
             //third one
-            appOnboardingPage(imagePath: "assets/animations/animation1.json", title: "Tương tác với giảng viên", title2: "Dễ dàng trao đổi với giảng viên của bạn")
+            appOnboardingPage(imagePath: "assets/animations/animation1.json", title: "Tương tác với giảng viên", title2: "Dễ dàng trao đổi với giảng viên của bạn qua tin nhắn trực tiếp")
 
           ],
         ),
