@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ucourse_app/pages/welcome/welcome.dart';
 
-void main() {
-  runApp(const MyApp());
+void main() async {
+  // await ScreenUtil.ensureScreenSize();
+  //wrapping with ProviderScope make Riverpod works
+  runApp(ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -32,7 +36,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Welcome(),
+      home: Welcome(),
     );
   }
 }
